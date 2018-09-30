@@ -20,7 +20,7 @@ client.on('message', msg => {
     msg.reply('Pong! **' + client.ping + '** ms');
   }
   if (msg.content.toLowerCase() === prefix + 'sa') {
-    msg.reply('Aleyküm selam!');
+    msg.reply('as');
   }
   if (msg.content.toLowerCase() === prefix + 'yaz') {
     msg.delete();
@@ -42,4 +42,4 @@ client.on('message', msg => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
